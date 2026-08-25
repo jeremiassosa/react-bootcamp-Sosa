@@ -1,4 +1,4 @@
-import Counter from './lesson3/counter';
+import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 
 function App() {
