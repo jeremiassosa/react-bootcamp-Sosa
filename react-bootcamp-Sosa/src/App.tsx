@@ -1,7 +1,8 @@
 import './App.css'
-import TrafficLight from './lesson4/exercise1-TrafficLight'
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
+import TrafficLight from './lesson4/exercise1-TrafficLight'
+import AlertStock from './lesson4/exercise2-AlertStock';
 
 function App() {
   return (
@@ -20,7 +21,9 @@ function App() {
     <hr />
       
       <h3>Exercise 1</h3>
-      <TrafficLight />  
+        <TrafficLight /> 
+      <h3>Exercise 2</h3>
+        <AlertStock />
     </>
     )
 }
