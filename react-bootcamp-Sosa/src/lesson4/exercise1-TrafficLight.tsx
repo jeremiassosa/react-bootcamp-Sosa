@@ -22,23 +22,32 @@ function TrafficLight() {
         width: '100%'
     }}>
       <div style={{
+        background: "black",
+        padding: '10px',
+        borderRadius: '20px',
+        marginBottom: '10px'
+      }}>
+
+      
+      <div style={{
         width: '40px',
         height: '40px',
         borderRadius: '100%',
         background: 'red',
-        border: '1px solid white',
+        WebkitBoxShadow: '0px 0px 20px 10px rgba(216, 0, 0, 0.5)',
         opacity: currentColor === 'red' ? '1' : '0.1',
         transition: 'opacity 1s ease' 
       }} id='trafficLightRed'></div>
 
       <div style={{
-        width: '40px',
+        width: '40px', 
         height: '40px',
         borderRadius: '100%',
         background: 'yellow',
-        border: '1px solid white',
+        WebkitBoxShadow: '0px 0px 20px 10px rgba(238, 255, 0, 0.5)',
         opacity: currentColor === 'yellow' ? '1' : '0.1',
-        transition: 'opacity 1s ease'
+        transition: 'opacity 1s ease',
+        margin: '5px 0 5px 0'
       }} id='trafficLighYellow'></div>
 
       <div style={{
@@ -46,10 +55,11 @@ function TrafficLight() {
         height: '40px',
         borderRadius: '100%',
         background: 'green',
-        border: '1px solid white',
+        WebkitBoxShadow: '0px 0px 20px 10px rgba(3, 194, 0, 0.5)',
         opacity: currentColor === 'green' ? '1' : '0.1', 
         transition: 'opacity 1s ease'
       }} id='trafficLightGreen'></div>
+    </div>
       <button
         type="button"
         className="counter"
@@ -58,6 +68,7 @@ function TrafficLight() {
         Siguiente Color {trafficLightOrder[trafficLight]}
       </button>
     </div>
+
   )
 }
 
