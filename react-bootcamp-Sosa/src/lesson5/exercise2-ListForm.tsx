@@ -4,7 +4,7 @@ interface Menssage {
   text: string;
 }
 
-export default function App() {
+export default function ListForm() {
   const [messages, setMessages] = useState<Menssage[]>([]);
   const [inputText, setInputText] = useState<string>("");
 
