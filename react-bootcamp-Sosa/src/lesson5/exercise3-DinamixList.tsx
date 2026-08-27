@@ -1,9 +1,8 @@
 import { useState } from "react";
 
-// Actualizamos la estructura para que guarde tanto el nombre como la tarea
 interface Menssage {
   name: string;
-  tarea: string;
+  work: string;
 }
 
 export default function DinamicList() {
@@ -20,7 +19,7 @@ export default function DinamicList() {
     }
     const newMenssage: Menssage = {
       name: inputTextName,
-      tarea: inputTextWork,
+      work: inputTextWork,
     };
 
     setMessages([...messages, newMenssage]);
@@ -59,7 +58,7 @@ export default function DinamicList() {
             }}
           >
             <span>
-              <strong>{message.name}:</strong> {message.tarea}
+              <strong>{message.name}:</strong> {message.work}
             </span>
             <button onClick={() => deleteMessage(index)}>delete</button>
           </li>
