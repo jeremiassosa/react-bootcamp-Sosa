@@ -1,26 +1,26 @@
 import { useState } from "react";
 
-interface Mensaje {
+interface Menssage {
   text: string;
 }
 
 export default function App() {
-  const [messages, setMessages] = useState<Mensaje[]>([]);
+  const [messages, setMessages] = useState<Menssage[]>([]);
   const [inputText, setInputText] = useState<string>("");
 
-  function manejarEnvio(inputEvent: any) {
+  function sendMenssage(inputEvent: any) {
     inputEvent.preventDefault();
     if (inputText.trim() === "") {
       return; 
     }
-    const nuevoMensaje: Mensaje = { text: inputText };
-    setMessages([...messages, nuevoMensaje]);
+    const newMenssage: Menssage = { text: inputText };
+    setMessages([...messages, newMenssage]);
     setInputText("");
   }
 
   function deleteMessage(positionMenssageDelete: number) {
-    const listaFiltrada = messages.filter((_, index) => index !== positionMenssageDelete);
-    setMessages(listaFiltrada);
+    const leakedList = messages.filter((_, index) => index !== positionMenssageDelete);
+    setMessages(leakedList);
   }
 
   return (
@@ -45,7 +45,7 @@ export default function App() {
         </div>
       ))}
 
-      <form onSubmit={manejarEnvio}>
+      <form onSubmit={sendMenssage}>
         <input 
           type="text" 
           placeholder="Write your text" 
