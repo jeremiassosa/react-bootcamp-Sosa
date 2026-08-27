@@ -15,7 +15,7 @@ export default function LiveGreeting() {
         placeholder="Write your nombre"
         value={name}
         onChange={nameChange}
-        style={{ padding: '8px', fontSize: '16px' }}
+        style={{ padding: '8px'}}
         />
         <p>¡Hola, {name.trim() === '' ? 'desconocido' : name}!</p>
         </form>
