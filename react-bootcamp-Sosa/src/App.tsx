@@ -3,6 +3,10 @@ import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
 import AlertStock from './lesson4/exercise2-AlertStock';
+import RenderList from './lesson5/exercise1-RenderList';
+import ListForm from './lesson5/exercise2-ListForm';
+import DinamicList from './lesson5/exercise3-DinamixList';
+
 
 function App() {
   return (
@@ -24,6 +28,17 @@ function App() {
         <TrafficLight /> 
       <h3>Exercise 2</h3>
         <AlertStock />
+
+    <h2>Lesson5</h2>
+
+    <hr />
+
+      <h3>Exercise 1</h3>
+        <RenderList/>
+      <h3>Exercise 2</h3>
+        <ListForm/>
+      <h3>Exercise 3</h3>
+        <DinamicList/>
     </>
     )
 }
