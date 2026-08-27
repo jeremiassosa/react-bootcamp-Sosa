@@ -6,6 +6,7 @@ import AlertStock from './lesson4/exercise2-AlertStock';
 import RenderList from './lesson5/exercise1-RenderList';
 import ListForm from './lesson5/exercise2-ListForm';
 import DinamicList from './lesson5/exercise3-DinamixList';
+import LiveGreeting from './lesson6/exercise1-SaludoEnVivo';
 
 
 function App() {
@@ -39,6 +40,13 @@ function App() {
         <ListForm/>
       <h3>Exercise 3</h3>
         <DinamicList/>
+
+    <h2>Lesson5</h2>
+
+    <hr />
+
+      <h3>Exercise 1</h3>
+        <LiveGreeting/>
     </>
     )
 }
