@@ -5,8 +5,7 @@ import TrafficLight from './lesson4/exercise1-TrafficLight'
 import AlertStock from './lesson4/exercise2-AlertStock';
 import RenderList from './lesson5/exercise1-RenderList';
 import ListForm from './lesson5/exercise2-ListForm';
-import MensajeLL from './lesson5/exercise2-ListForm';
-import DinamicList from './lesson5/exercise3-';
+import DinamicList from './lesson5/exercise3-DinamixList';
 
 
 function App() {
