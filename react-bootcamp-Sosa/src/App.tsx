@@ -9,6 +9,7 @@ import DinamicList from './lesson5/exercise3-DinamixList';
 import LiveGreeting from './lesson6/exercise1-SaludoEnVivo';
 import LimitCaracters from './lesson6/exercise2-CampoConLimite';
 import CounterUseEffect from './lesson8/exercise1-ContadorClicks';
+import Countdown from './lesson8/exercise2-CuentaRegresiva';
 
 
 function App() {
@@ -53,6 +54,8 @@ function App() {
 
       <h3>Exercise 1</h3>
        <CounterUseEffect/>
+      <h3>Exercise 2</h3>
+       <Countdown initialSeconds={5}/>
     </>
     )
 }
