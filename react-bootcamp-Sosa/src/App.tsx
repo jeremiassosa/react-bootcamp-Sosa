@@ -1,4 +1,6 @@
 import './App.css'
+import { Counterv12, CounterWithContext } from './lesson10/exercise1-Counter';
+import { ContadorProvider } from './lesson10/exercise1-CounterContext';
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
@@ -63,6 +65,13 @@ function App() {
 
       <h3>Exercise 1</h3>
         <CountdownWithMemory initialSeconds={30}/>
+    <h2>Lesson 10</h2>
+    <hr />
+
+      <h3>Exercise 1</h3>
+        <ContadorProvider>
+            <CounterWithContext/>
+        </ContadorProvider>
     </>
     )
 }
