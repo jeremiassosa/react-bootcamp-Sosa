@@ -9,7 +9,8 @@ import DinamicList from './lesson5/exercise3-DinamixList';
 import LiveGreeting from './lesson6/exercise1-SaludoEnVivo';
 import LimitCaracters from './lesson6/exercise2-CampoConLimite';
 import CounterUseEffect from './lesson8/exercise1-ContadorClicks';
-import Countdown from './lesson8/exercise2-CuentaRegresiva';
+import Countdown from './lesson8/exercise3-CuentaRegresiva';
+import CountdownWithMemory from './lesson9/exercise1-CountdownWithMemory';
 
 
 function App() {
@@ -56,6 +57,12 @@ function App() {
        <CounterUseEffect/>
       <h3>Exercise 2</h3>
        <Countdown initialSeconds={5}/>
+    
+    <h2>Lesson 9</h2>
+    <hr />
+
+      <h3>Exercise 1</h3>
+        <CountdownWithMemory initialSeconds={30}/>
     </>
     )
 }
