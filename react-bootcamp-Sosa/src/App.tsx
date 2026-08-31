@@ -3,6 +3,7 @@ import { CounterWithContext } from './lesson10/exercise1-Counter';
 import { ContadorProvider } from './lesson10/exercise1-CounterContext';
 import { ThemeWithContext } from './lesson10/exercise2-ChangeTheme';
 import { ThemeProvider } from './lesson10/exercise2-ChangeThemeContext';
+import CounterZustand from './lesson11/Exercise1-CounterA';
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
@@ -78,6 +79,11 @@ function App() {
         <ThemeProvider>
           <ThemeWithContext/>
         </ThemeProvider>
+    <h2>Lesson 11</h2>
+    <hr />
+
+      <h3>Exercise 1</h3>
+            <CounterZustand/>
     </>
     )
 }
