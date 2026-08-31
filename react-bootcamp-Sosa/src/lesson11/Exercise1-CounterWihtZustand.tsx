@@ -1,6 +1,6 @@
-import { useContadorStore } from './Exercise1-ContadorA'
+import { useContadorStore } from './Exercise1-CounterZustand'
 
-function CounterZustand() {
+function CounterWihtZustand() {
 
   const count = useContadorStore((state) => state.count)
   const incrementar = useContadorStore((state) => state.incrementar)
@@ -28,4 +28,4 @@ function CounterZustand() {
     </>
   )
 }
-export default CounterZustand
+export default CounterWihtZustand
