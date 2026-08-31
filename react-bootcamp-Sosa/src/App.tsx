@@ -1,6 +1,8 @@
 import './App.css'
-import { Counterv12, CounterWithContext } from './lesson10/exercise1-Counter';
+import { CounterWithContext } from './lesson10/exercise1-Counter';
 import { ContadorProvider } from './lesson10/exercise1-CounterContext';
+import { ThemeWithContext } from './lesson10/exercise2-ChangeTheme';
+import { ThemeProvider } from './lesson10/exercise2-ChangeThemeContext';
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
@@ -72,6 +74,10 @@ function App() {
         <ContadorProvider>
             <CounterWithContext/>
         </ContadorProvider>
+      <h3>Exercise 2</h3>
+        <ThemeProvider>
+          <ThemeWithContext/>
+        </ThemeProvider>
     </>
     )
 }
