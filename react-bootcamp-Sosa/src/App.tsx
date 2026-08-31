@@ -5,6 +5,7 @@ import { ThemeWithContext } from './lesson10/exercise2-ChangeTheme';
 import { ThemeProvider } from './lesson10/exercise2-ChangeThemeContext';
 import CounterWihtZustand from './lesson11/Exercise1-CounterWihtZustand';
 import ListFormWithZustand from './lesson11/Exercise2-FormWithZustand';
+import LoginWithZustand from './lesson11/Exercise3-LoginWihtZustand';
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
@@ -87,6 +88,8 @@ function App() {
         <CounterWihtZustand/>
       <h3>Exercise 2</h3>
         <ListFormWithZustand/>
+      <h3>Exercise 3</h3>
+        <LoginWithZustand/>
     </>
     )
 }
