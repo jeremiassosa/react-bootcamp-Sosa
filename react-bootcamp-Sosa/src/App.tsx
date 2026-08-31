@@ -4,6 +4,7 @@ import { ContadorProvider } from './lesson10/exercise1-CounterContext';
 import { ThemeWithContext } from './lesson10/exercise2-ChangeTheme';
 import { ThemeProvider } from './lesson10/exercise2-ChangeThemeContext';
 import CounterWihtZustand from './lesson11/Exercise1-CounterWihtZustand';
+import ListFormWithZustand from './lesson11/Exercise2-FormWithZustand';
 import Counter from './lesson3/exercise1-counter';
 import ILike from './lesson3/exercise2-like';
 import TrafficLight from './lesson4/exercise1-TrafficLight'
@@ -83,7 +84,9 @@ function App() {
     <hr />
 
       <h3>Exercise 1</h3>
-            <CounterWihtZustand/>
+        <CounterWihtZustand/>
+      <h3>Exercise 2</h3>
+        <ListFormWithZustand/>
     </>
     )
 }
