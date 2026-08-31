@@ -1,95 +1,40 @@
-import './App.css'
-import { CounterWithContext } from './lesson10/exercise1-Counter';
-import { ContadorProvider } from './lesson10/exercise1-CounterContext';
-import { ThemeWithContext } from './lesson10/exercise2-ChangeTheme';
-import { ThemeProvider } from './lesson10/exercise2-ChangeThemeContext';
-import CounterWihtZustand from './lesson11/Exercise1-CounterWihtZustand';
-import ListFormWithZustand from './lesson11/Exercise2-FormWithZustand';
-import LoginWithZustand from './lesson11/Exercise3-LoginWihtZustand';
-import Counter from './lesson3/exercise1-counter';
-import ILike from './lesson3/exercise2-like';
-import TrafficLight from './lesson4/exercise1-TrafficLight'
-import AlertStock from './lesson4/exercise2-AlertStock';
-import RenderList from './lesson5/exercise1-RenderList';
-import ListForm from './lesson5/exercise2-ListForm';
-import DinamicList from './lesson5/exercise3-DinamixList';
-import LiveGreeting from './lesson6/exercise1-SaludoEnVivo';
-import LimitCaracters from './lesson6/exercise2-CampoConLimite';
-import CounterUseEffect from './lesson8/exercise1-ContadorClicks';
-import Countdown from './lesson8/exercise3-CuentaRegresiva';
-import CountdownWithMemory from './lesson9/exercise1-CountdownWithMemory';
-
+import { BrowserRouter, Link, Route, Routes } from "react-router-dom"
+import { Page3 } from "./pages/Lesson3-page"
+import { Page4 } from "./pages/Lesson4-page"
+import { Page5 } from "./pages/Lesson5-page"
+import { Page6 } from "./pages/Lesson6-page"
+import { Page8 } from "./pages/Lesson8-page"
+import { Page9 } from "./pages/Lesson9-page"
+import { Page10 } from "./pages/Lesson10-page"
+import { Page11 } from "./pages/Lesson11-page"
 
 function App() {
   return (
-    <>      
-    <h2>Lesson 3</h2>
-    <hr />
-      
-      <h3>Exercise 1</h3>
-        <Counter />
-      <h3>Exercise 2</h3>
-        <ILike />
-        
-    <h2>Lesson 4</h2>
-    <hr />
-      
-      <h3>Exercise 1</h3>
-        <TrafficLight /> 
-      <h3>Exercise 2</h3>
-        <AlertStock />
+    <>          
+      <BrowserRouter>
+      <nav>
+        <Link to="/pages/Lesson3-page.tsx">Clase 3</Link> |{" "}
+        <Link to="/pages/Lesson4-page.tsx">Clase 4</Link> |{" "}
+        <Link to="/pages/Lesson5-page.tsx">Clase 5</Link> |{" "}
+        <Link to="/pages/Lesson6-page.tsx">Clase 6</Link> |{" "}
+        <Link to="/pages/Lesson8-page.tsx">Clase 8</Link> |{" "}
+        <Link to="/pages/Lesson9-page.tsx">Clase 9</Link> |{" "}
+        <Link to="/pages/Lesson10-page.tsx">Clase 10</Link> |{" "}
+        <Link to="/pages/Lesson11-page.tsx">Clase 11</Link> 
+      </nav>
 
-    <h2>Lesson 5</h2>
-    <hr />
+    <Routes>
+      <Route path='/pages/Lesson3-page.tsx' element={ <Page3 />}/>
+      <Route path='/pages/Lesson4-page.tsx' element={ <Page4 />}/>
+      <Route path='/pages/Lesson5-page.tsx' element={ <Page5 />}/>
+      <Route path='/pages/Lesson6-page.tsx' element={ <Page6 />}/>
+      <Route path='/pages/Lesson8-page.tsx' element={ <Page8 />}/>
+      <Route path='/pages/Lesson9-page.tsx' element={ <Page9 />}/>
+      <Route path='/pages/Lesson10-page.tsx' element={ <Page10 />}/>
+      <Route path='/pages/Lesson11-page.tsx' element={ <Page11 />}/>
+    </Routes>
 
-      <h3>Exercise 1</h3>
-        <RenderList/>
-      <h3>Exercise 2</h3>
-        <ListForm/>
-      <h3>Exercise 3</h3>
-        <DinamicList/>
-
-    <h2>Lesson 6</h2>
-    <hr />
-
-      <h3>Exercise 1</h3>
-        <LiveGreeting/>
-      <h3>Exercise 2</h3>
-        <LimitCaracters/>
-    
-    <h2>Lesson 8</h2>
-    <hr />
-
-      <h3>Exercise 1</h3>
-       <CounterUseEffect/>
-      <h3>Exercise 2</h3>
-       <Countdown initialSeconds={5}/>
-    
-    <h2>Lesson 9</h2>
-    <hr />
-
-      <h3>Exercise 1</h3>
-        <CountdownWithMemory initialSeconds={30}/>
-    <h2>Lesson 10</h2>
-    <hr />
-
-      <h3>Exercise 1</h3>
-        <ContadorProvider>
-            <CounterWithContext/>
-        </ContadorProvider>
-      <h3>Exercise 2</h3>
-        <ThemeProvider>
-          <ThemeWithContext/>
-        </ThemeProvider>
-    <h2>Lesson 11</h2>
-    <hr />
-
-      <h3>Exercise 1</h3>
-        <CounterWihtZustand/>
-      <h3>Exercise 2</h3>
-        <ListFormWithZustand/>
-      <h3>Exercise 3</h3>
-        <LoginWithZustand/>
+    </BrowserRouter>
     </>
     )
 }
