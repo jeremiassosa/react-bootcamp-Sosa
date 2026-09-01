@@ -7,7 +7,6 @@ import { Page8 } from "./pages/Lesson8-page"
 import { Page9 } from "./pages/Lesson9-page"
 import { Page10 } from "./pages/Lesson10-page"
 import { Page11 } from "./pages/Lesson11-page"
-import { Page12 } from "./pages/Lesson12-page"
 
 function App() {
   return (
@@ -22,7 +21,6 @@ function App() {
         <Link to="/pages/Lesson9-page.tsx" className="Link">Clase 9</Link>
         <Link to="/pages/Lesson10-page.tsx" className="Link">Clase 10</Link>
         <Link to="/pages/Lesson11-page.tsx" className="Link">Clase 11</Link>
-        <Link to="/pages/Lesson12-page.tsx" className="Link">Clase 12</Link>
       </nav>
 
     <Routes>
@@ -34,7 +32,6 @@ function App() {
       <Route path='/pages/Lesson9-page.tsx' element={ <Page9 />}/>
       <Route path='/pages/Lesson10-page.tsx' element={ <Page10 />}/>
       <Route path='/pages/Lesson11-page.tsx' element={ <Page11 />}/>
-      <Route path='/pages/Lesson12-page.tsx' element={ <Page12 />} />
     </Routes>
 
     </BrowserRouter>
