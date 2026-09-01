@@ -13,14 +13,14 @@ function App() {
     <>          
       <BrowserRouter>
       <nav>
-        <Link to="/pages/Lesson3-page.tsx">Clase 3</Link> |{" "}
-        <Link to="/pages/Lesson4-page.tsx">Clase 4</Link> |{" "}
-        <Link to="/pages/Lesson5-page.tsx">Clase 5</Link> |{" "}
-        <Link to="/pages/Lesson6-page.tsx">Clase 6</Link> |{" "}
-        <Link to="/pages/Lesson8-page.tsx">Clase 8</Link> |{" "}
-        <Link to="/pages/Lesson9-page.tsx">Clase 9</Link> |{" "}
-        <Link to="/pages/Lesson10-page.tsx">Clase 10</Link> |{" "}
-        <Link to="/pages/Lesson11-page.tsx">Clase 11</Link> 
+        <Link to="/pages/Lesson3-page.tsx" className="Link">Clase 3</Link>
+        <Link to="/pages/Lesson4-page.tsx" className="Link">Clase 4</Link>
+        <Link to="/pages/Lesson5-page.tsx" className="Link">Clase 5</Link>
+        <Link to="/pages/Lesson6-page.tsx" className="Link">Clase 6</Link>
+        <Link to="/pages/Lesson8-page.tsx" className="Link">Clase 8</Link>
+        <Link to="/pages/Lesson9-page.tsx" className="Link">Clase 9</Link>
+        <Link to="/pages/Lesson10-page.tsx" className="Link">Clase 10</Link>
+        <Link to="/pages/Lesson11-page.tsx" className="Link">Clase 11</Link>
       </nav>
 
     <Routes>

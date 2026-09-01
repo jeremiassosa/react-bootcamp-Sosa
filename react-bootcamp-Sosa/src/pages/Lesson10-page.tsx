@@ -7,7 +7,7 @@ export function Page10() {
   return (
     <>
       <h2>Lesson 10</h2>
-        <hr />
+
       <h3>Exercise 1</h3>
         <ContadorProvider>
             <CounterWithContext />

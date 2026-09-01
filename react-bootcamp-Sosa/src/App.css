@@ -194,3 +194,37 @@
 .night{
   background-color: black;
 }
+nav{
+  margin: 20px;
+  display: grid;
+  grid-template-columns: repeat(8, 1fr);
+  gap: 10px;
+  @media (max-width: 600px) {
+    grid-template-columns: repeat(7, 1fr);
+  }
+  @media (max-width: 500px) {
+    grid-template-columns: repeat(6, 1fr);
+  }
+  @media (max-width: 370px) {
+    grid-template-columns: repeat(5, 1fr);
+  }
+}
+.Link{
+  text-decoration: none;
+  color: #aa3bff;
+  background-color: #aa3bff3e;
+  border-radius: 5px;
+  border: 1px solid #aa3bff;
+  padding: 5px;
+}
+.Link:hover {
+  color: rgb(120, 52, 172);
+  border: rgb(120, 52, 172);
+}
+body{
+  margin-bottom: 50px;
+}
+h2{
+  font-weight: 700;
+  color: rgba(0, 0, 0, 0.797);
+}
