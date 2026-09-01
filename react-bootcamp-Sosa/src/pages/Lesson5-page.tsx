@@ -6,7 +6,7 @@ export function Page5() {
   return(
       <>
     <h2>Lesson 5</h2>
-        <hr />
+
     <h3>Exercise 1</h3>
         <RenderList />
     <h3>Exercise 2</h3>

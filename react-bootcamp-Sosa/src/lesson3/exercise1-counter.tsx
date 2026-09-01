@@ -13,7 +13,7 @@ function Counter() {
         >
           +
         </button>
-        <span>Conunt is {count}</span>
+        <span>Count is {count}</span>
         <button
           type="button"
           className="counter"
