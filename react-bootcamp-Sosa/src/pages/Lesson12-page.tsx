@@ -1,5 +1,6 @@
 import { ToggleThemeProvider } from "../lesson12/exercise1-UseToggle";
 import { ToggleThemeWithContext } from "../lesson12/exercise1-UseToggleWihtContext";
+import { ComponenteContador } from "../lesson12/exercise2-UseCounterwithContext";
 
 export function Page12() {
     return(
@@ -10,7 +11,8 @@ export function Page12() {
         <ToggleThemeProvider>
             <ToggleThemeWithContext />
         </ToggleThemeProvider>
+          <h3>Exercise 2</h3>
+            <ComponenteContador/>
         </>
-
     )
 }
